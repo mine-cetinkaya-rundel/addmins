@@ -23,5 +23,10 @@ insert_dashes <- function(){
   insert_pos <- c(current_row, current_col + 1)
 
   # Insert dashes
-  rstudioapi::insertText(insert_pos, strrep("-", num_dashes), id = context_id)
+  rstudioapi::insertText(
+    location = insert_pos,
+    text     = paste0(strrep("-", num_dashes), "\n"),
+    id       = context_id
+    )
+
 }
