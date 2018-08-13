@@ -1,0 +1,16 @@
+Package: addmine
+Type: Package
+Title: Addins for Mine (Title Case)
+Version: 0.1.0
+Author: Mine Cetinkaya-Rundel
+Maintainer: Mine Cetinkaya-Rundel <cetinkaya.mine@gmail.com>
+Description: This package contains addins that are useful for Mine's workflow.
+License: MIT + file LICENSE
+Depends:
+    R (>= 3.0.0)
+Imports:
+    rstudioapi (>= 0.4)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace", "collate"))
+RoxygenNote: 6.0.1.9000
