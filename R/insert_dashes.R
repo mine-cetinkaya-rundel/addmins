@@ -16,9 +16,8 @@ insert_dashes <- function(){
   current_row <- context$selection[[1]]$range[[1]][[1]]
   current_col <- context$selection[[1]]$range[[1]][[2]]
 
-  # Calculate how many dashes from current cursor position
-  # plus one white space until column 80
-  num_dashes <- 80 - (current_col + 1) + 1
+  # Calculate how many dashes from current cursor position until column 80
+  num_dashes <- 80 - current_col + 1
 
   # Store where to start inserting dashes
   insert_pos <- c(current_row, current_col + 1)
