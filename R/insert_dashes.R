@@ -25,8 +25,8 @@ insert_dashes <- function(){
   # Insert dashes
   rstudioapi::insertText(
     #location = insert_pos,
-    text     = paste0(strrep("-", num_dashes), "\n"),
-    id       = context_id
+    text     = paste0(strrep("-", num_dashes), "\n")
+    #id       = context_id
     )
 
 }
