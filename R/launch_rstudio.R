@@ -7,6 +7,6 @@
 
 launch_rstudio <- function(){
 
-  rstudioapi::terminalExecute("open -n /Applications/RStudio.app", show = F)
+  rstudioapi::terminalExecute("open -n /Applications/RStudio.app", show = FALSE)
 
 }
