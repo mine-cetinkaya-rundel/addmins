@@ -5,8 +5,14 @@
 #'
 #' @export
 
-launch_rstudio <- function(){
+launch_rstudio <- function() {
 
-  rstudioapi::terminalExecute("open -n /Applications/RStudio.app", show = FALSE)
-
+  if (Sys.info()["sysname"] != "Windows") {
+    rstudioapi::terminalExecute("open -n /Applications/RStudio.app", show = FALSE)
+  } else {
+    path <- rstudioapi::dictionariesPath()
+    path <- gsub("resources/dictionaries", "bin/rstudio.exe", path)
+    path <- paste0('"', path, '" -n')
+    rstudioapi::terminalExecute(path, show = FALSE)
+  }
 }
