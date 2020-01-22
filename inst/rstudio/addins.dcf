@@ -7,3 +7,8 @@ Name: Launch RStudio
 Description: Launch a new project-less RStudio session.
 Binding: launch_rstudio
 Interactive: false
+
+Name: Use teaching mode
+Description: Use default theme in RStudio for teaching.
+Binding: use_teach_mode
+Interactive: false

@@ -2,3 +2,4 @@
 
 export(insert_dashes)
 export(launch_rstudio)
+export(use_teach_mode)
