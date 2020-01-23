@@ -2,5 +2,6 @@
 
 export(insert_dashes)
 export(launch_rstudio)
-export(ude_daytime_theme)
+export(use_daytime_theme)
+export(use_nighttime_theme)
 export(use_teach_mode)

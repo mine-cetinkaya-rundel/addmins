@@ -4,7 +4,7 @@
 #'
 #' @export
 
-ude_daytime_theme <- function(){
+use_nighttime_theme <- function(){
 
   # Set default theme
   rstudioapi::applyTheme("Solarized Dark")
